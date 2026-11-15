@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>My Posts | Lost & Found Connect</title>
+
+    
+</head>
+
+<body class="page-my-posts-html">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <!-- Logo and website name -->
+        <div class="logo">
+            <img src="Designer.png" alt="Lost and Found Connect Logo">
+
+            <div class="logo-text">
+                <h1>Lost & Found <span>Connect</span></h1>
+                <p>Find. Report. Reconnect.</p>
+            </div>
+        </div>
+
+        <!-- Navigation links -->
+        <nav class="navbar">
+
+            <a href="index.html">
+                <img src="home.png" alt="">
+                Home
+            </a>
+
+            <a href="search.html">
+                <img src="search.png" alt="">
+                Search
+            </a>
+
+            <a href="submit-report.html">
+                <img src="reporrt.webp" alt="">
+                Submit Report
+            </a>
+
+            <a href="my-posts.html" class="active">
+                <img src="image-removebg-preview.png" alt="">
+                My Posts
+            </a>
+
+            <a href="notifications.html">
+                <img src="notif.png" alt="">
+                Notifications
+            </a>
+
+            <a href="profile.html">
+                <img src="profile.webp" alt="">
+                Profile
+            </a>
+
+        </nav>
+
+        <!-- Login button -->
+        <div class="header-account">
+            <a href="login.html" class="login-button">
+                Log In / Sign Up
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
+
+        <!-- Page heading -->
+        <div class="page-heading">
+
+            <div>
+                <h2>My Posts</h2>
+                <p>Manage and keep track of the items you have reported.</p>
+            </div>
+
+            <a href="submit-report.html" class="new-report-button">
+                + New Report
+            </a>
+
+        </div>
+
+
+        <!-- POSTS CONTAINER -->
+        <section class="posts-container">
+
+            <!-- Post category tabs -->
+            <div class="post-tabs">
+
+                <a href="my-posts.html" class="active">
+                    All My Posts
+                </a>
+
+                <a href="my-lost-posts.html">
+                    My Lost Posts
+                </a>
+
+                <a href="my-found-posts.html">
+                    My Found Posts
+                </a>
+
+            </div>
+
+
+            <!-- Summary cards -->
+            <div class="posts-summary">
+
+                <div class="summary-card">
+                    <p>Total Posts</p>
+                    <h3>5</h3>
+                </div>
+
+                <div class="summary-card">
+                    <p>Lost Items</p>
+                    <h3>3</h3>
+                </div>
+
+                <div class="summary-card">
+                    <p>Found Items</p>
+                    <h3>2</h3>
+                </div>
+
+            </div>
+
+
+            <!-- Posts heading -->
+            <div class="posts-heading">
+
+                <h3>Your Submitted Reports</h3>
+                <p>Showing 5 reports</p>
+
+            </div>
+
+
+            <!-- Item cards -->
+            <div class="posts-grid">
+
+
+                <!-- POST 1 -->
+                <div class="post-card">
+
+                    <div class="post-image">
+                        <img src="2_264-removebg-preview.png" alt="Black Wallet">
+                    </div>
+
+                    <div class="post-details">
+
+                        <span class="post-status status-lost">
+                            LOST ITEM
+                        </span>
+
+                        <h4>Black Wallet</h4>
+
+                        <div class="post-info">
+                            <img src="loc.png" alt="">
+                            University Library
+                        </div>
+
+                        <div class="post-info">
+                            <img src="date.png" alt="">
+                            November 10, 2026
+                        </div>
+
+                        <p class="post-description">
+                            A small black wallet containing personal cards and some cash.
+                        </p>
+
+                        <a href="item-details-wallet.html" class="view-button">
+                            View Details
+                        </a>
+
+                        <div class="card-actions">
+                            <a href="#">Edit</a>
+                            <a href="#" class="resolve-button">Resolve</a>
+                            <a href="#" class="delete-button">Delete</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POST 2 -->
+                <div class="post-card">
+
+                    <div class="post-image">
+                        <img src="CSE-AS-ExtraKeys_1200x1200-removebg-preview.png" alt="Set of Keys">
+                    </div>
+
+                    <div class="post-details">
+
+                        <span class="post-status status-found">
+                            FOUND ITEM
+                        </span>
+
+                        <h4>Set of Keys</h4>
+
+                        <div class="post-info">
+                            <img src="loc.png" alt="">
+                            School Cafeteria
+                        </div>
+
+                        <div class="post-info">
+                            <img src="date.png" alt="">
+                            November 9, 2026
+                        </div>
+
+                        <p class="post-description">
+                            A set of silver keys found on one of the cafeteria tables.
+                        </p>
+
+                        <a href="item-details-keys.html" class="view-button">
+                            View Details
+                        </a>
+
+                        <div class="card-actions">
+                            <a href="#">Edit</a>
+                            <a href="#" class="resolve-button">Resolve</a>
+                            <a href="#" class="delete-button">Delete</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POST 3 -->
+                <div class="post-card">
+
+                    <div class="post-image">
+                        <img src="pon.png" alt="Mobile Phone">
+                    </div>
+
+                    <div class="post-details">
+
+                        <span class="post-status status-resolved">
+                            RESOLVED
+                        </span>
+
+                        <h4>Mobile Phone</h4>
+
+                        <div class="post-info">
+                            <img src="loc.png" alt="">
+                            Computer Laboratory
+                        </div>
+
+                        <div class="post-info">
+                            <img src="date.png" alt="">
+                            November 7, 2026
+                        </div>
+
+                        <p class="post-description">
+                            A mobile phone with a dark-colored case. Already returned to its owner.
+                        </p>
+
+                        <a href="item-details-phone.html" class="view-button">
+                            View Details
+                        </a>
+
+                        <div class="card-actions">
+                            <a href="#">Edit</a>
+                            <a href="#" class="resolve-button">Reopen</a>
+                            <a href="#" class="delete-button">Delete</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POST 4 -->
+                <div class="post-card">
+
+                    <div class="post-image">
+                        <img src="image-removebg-preview (1).png" alt="Water Bottle">
+                    </div>
+
+                    <div class="post-details">
+
+                        <span class="post-status status-found">
+                            FOUND ITEM
+                        </span>
+
+                        <h4>Water Bottle</h4>
+
+                        <div class="post-info">
+                            <img src="loc.png" alt="">
+                            School Hallway
+                        </div>
+
+                        <div class="post-info">
+                            <img src="date.png" alt="">
+                            November 5, 2026
+                        </div>
+
+                        <p class="post-description">
+                            A reusable blue water bottle left near the classroom area.
+                        </p>
+
+                        <a href="item-details-water-bottle.html" class="view-button">
+                            View Details
+                        </a>
+
+                        <div class="card-actions">
+                            <a href="#">Edit</a>
+                            <a href="#" class="resolve-button">Resolve</a>
+                            <a href="#" class="delete-button">Delete</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POST 5 -->
+                <div class="post-card">
+
+                    <div class="post-image">
+                        <img src="91TUd6ChSaL-removebg-preview.png" alt="Backpack">
+                    </div>
+
+                    <div class="post-details">
+
+                        <span class="post-status status-lost">
+                            LOST ITEM
+                        </span>
+
+                        <h4>Black Backpack</h4>
+
+                        <div class="post-info">
+                            <img src="loc.png" alt="">
+                            School Gymnasium
+                        </div>
+
+                        <div class="post-info">
+                            <img src="date.png" alt="">
+                            November 3, 2026
+                        </div>
+
+                        <p class="post-description">
+                            A black backpack with school supplies and personal belongings inside.
+                        </p>
+
+                        <a href="item-details-backpack.html" class="view-button">
+                            View Details
+                        </a>
+
+                        <div class="card-actions">
+                            <a href="#">Edit</a>
+                            <a href="#" class="resolve-button">Resolve</a>
+                            <a href="#" class="delete-button">Delete</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Lost & Found Connect. All Rights Reserved.</p>
+        <p>Find. Report. Reconnect.</p>
+    </footer>
+
+</body>
+
+</html>

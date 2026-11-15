@@ -1,0 +1,5591 @@
+/* Lost & Found Connect — shared stylesheet for all 12 pages.
+   Each page's original CSS is retained and scoped by its body class
+   so styles from one page do not unintentionally affect another.
+*/
+
+/* ==========================================================
+   index.html — page-specific styles
+   Scoped to body.page-index-html to prevent cross-page conflicts.
+   ========================================================== */
+
+/* Basic styling para consistent ang sizing ng elements */
+
+@font-face {
+    font-family: 'FriggCafe';
+    src: url('fonts/FriggCafe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body.page-index-html, body.page-index-html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body.page-index-html {
+    font-family: 'FriggCafe';
+    background-color: #f1f1f4;
+    color: #25252b;
+}
+
+
+
+body.page-index-html a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+/* HEADER */
+
+
+
+body.page-index-html .header {
+    background-color: #242428;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    gap: 20px;
+    color: white;
+}
+
+
+
+
+/* LOGO */
+
+
+
+body.page-index-html .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+
+
+body.page-index-html .logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+
+
+body.page-index-html .logo-text h1 {
+    font-size: 23px;
+    white-space: nowrap;
+}
+
+
+
+body.page-index-html .logo-text h1 span {
+    color: #ed4353;
+}
+
+
+
+body.page-index-html .logo-text p {
+    font-size: 12px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* NAVIGATION BAR */
+
+
+
+body.page-index-html .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+
+body.page-index-html .navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 13px;
+    border-radius: 7px;
+    color: #eeeeee;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+
+
+
+/* Navigation picture icons */
+
+
+
+body.page-index-html .navbar a img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+
+body.page-index-html .navbar a:hover {
+    background-color: #414146;
+}
+
+
+
+body.page-index-html .navbar a.active {
+    background-color: #c92335;
+    color: white;
+}
+
+
+
+
+/* LOGIN AND SIGN UP BUTTON */
+
+
+
+body.page-index-html .header-account {
+    flex-shrink: 0;
+}
+
+
+
+body.page-index-html .login-button {
+    display: inline-block;
+    background-color: #c92335;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+
+
+body.page-index-html .login-button:hover {
+    background-color: #a91d2d;
+}
+
+
+
+
+/* MAIN CONTENT */
+
+
+
+body.page-index-html .content {
+    max-width: 1500px;
+    margin: auto;
+    padding: 30px 40px;
+}
+
+
+
+
+/* WELCOME BANNER */
+
+
+
+body.page-index-html .welcome-banner {
+    min-height: 290px;
+    background: linear-gradient(110deg, #e7e7ed, #d8d9e0);
+    border-radius: 12px;
+    padding: 35px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+body.page-index-html .welcome-text {
+    max-width: 600px;
+}
+
+
+
+body.page-index-html .welcome-label {
+    color: #c92335;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+
+
+body.page-index-html .welcome-text h2 {
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 13px;
+}
+
+
+
+body.page-index-html .welcome-description {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    max-width: 470px;
+}
+
+
+
+body.page-index-html .explore-button {
+    display: inline-block;
+    background-color: #c92335;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+
+
+body.page-index-html .explore-button:hover {
+    background-color: #a91d2d;
+}
+
+
+
+
+/* WELCOME IMAGE */
+
+
+
+body.page-index-html .welcome-image {
+    width: 35%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+body.page-index-html .welcome-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+/* REPORT BUTTONS */
+
+
+
+body.page-index-html .report-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 22px 0 35px;
+}
+
+
+
+body.page-index-html .report-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.2s;
+}
+
+
+
+body.page-index-html .report-button:hover {
+    transform: translateY(-3px);
+}
+
+
+
+body.page-index-html .lost-button {
+    background-color: #27272c;
+}
+
+
+
+body.page-index-html .found-button {
+    background-color: #c92335;
+}
+
+
+
+
+/* REPORT BUTTON PICTURE ICONS */
+
+
+
+body.page-index-html .report-icon {
+    width: 72px;
+    height: 72px;
+    background-color: #ffffff25;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+
+
+body.page-index-html .report-icon img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+
+
+body.page-index-html .report-text h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+
+body.page-index-html .report-text p {
+    font-size: 12px;
+    color: #eeeeee;
+}
+
+
+
+body.page-index-html .report-arrow {
+    margin-left: auto;
+    font-size: 25px;
+}
+
+
+
+
+/* RECENT POSTS */
+
+
+
+body.page-index-html .recent-section {
+    margin-top: 20px;
+}
+
+
+
+body.page-index-html .section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+
+
+body.page-index-html .section-heading h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+}
+
+
+
+
+/* Fire icon beside Recent Posts */
+
+
+
+body.page-index-html .section-heading h2 img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+
+
+body.page-index-html .section-heading p {
+    color: #888;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+
+
+body.page-index-html .view-all {
+    color: #c92335;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+
+body.page-index-html .view-all:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* RECENT ITEM CARDS */
+
+
+
+body.page-index-html .recent-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+}
+
+
+
+body.page-index-html .item-card {
+    background-color: white;
+    border: 1px solid #e4e4e8;
+    border-radius: 10px;
+    padding: 12px;
+    transition: 0.2s;
+}
+
+
+
+body.page-index-html .item-card:hover {
+    box-shadow: 0 5px 15px #00000012;
+    transform: translateY(-3px);
+}
+
+
+
+
+/* ITEM IMAGE */
+
+
+
+body.page-index-html .item-photo {
+    height: 165px;
+    background-color: #ededf1;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+
+body.page-index-html .item-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 12px;
+}
+
+
+
+
+/* LOST AND FOUND LABELS */
+
+
+
+body.page-index-html .item-status {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    color: white;
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+
+body.page-index-html .lost-status {
+    background-color: #c92335;
+}
+
+
+
+body.page-index-html .found-status {
+    background-color: #45a45c;
+}
+
+
+
+
+/* ITEM INFORMATION */
+
+
+
+body.page-index-html .item-information {
+    padding: 10px 3px 3px;
+}
+
+
+
+body.page-index-html .item-information h3 {
+    font-size: 15px;
+    margin-bottom: 9px;
+}
+
+
+
+body.page-index-html .item-information p {
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+
+
+
+/* DATE PICTURE ICON */
+
+
+
+body.page-index-html .item-information .item-date {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+
+body.page-index-html .item-date img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+
+
+
+/* VIEW DETAILS BUTTON */
+
+
+
+body.page-index-html .view-details {
+    display: block;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 9px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 12px;
+    transition: 0.2s;
+}
+
+
+
+body.page-index-html .view-details:hover {
+    background-color: #c92335;
+    color: white;
+    border-color: #c92335;
+}
+
+
+
+
+/* BOTTOM MESSAGE */
+
+
+
+body.page-index-html .bottom-message {
+    background-color: #f9e7eb;
+    border-radius: 10px;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+
+
+body.page-index-html .bottom-icon {
+    background-color: #c92335;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+
+
+body.page-index-html .bottom-message h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+
+
+body.page-index-html .bottom-message p {
+    color: #777;
+    font-size: 12px;
+}
+
+
+
+
+/* FOOTER */
+
+
+
+body.page-index-html footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 12px;
+    border-top: 1px solid #ddd;
+    background-color: white;
+}
+
+
+
+
+/* RESPONSIVE LAYOUT */
+
+
+
+@media screen and (max-width: 1200px)  {
+
+
+    
+body.page-index-html .header {
+        flex-wrap: wrap;
+    }
+
+
+    
+body.page-index-html .navbar {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    
+body.page-index-html .recent-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 600px)  {
+
+
+    
+body.page-index-html .header {
+        justify-content: center;
+        padding: 15px;
+    }
+
+
+    
+body.page-index-html .logo-text h1 {
+        font-size: 19px;
+    }
+
+
+    
+body.page-index-html .navbar {
+        gap: 3px;
+    }
+
+
+    
+body.page-index-html .navbar a {
+        font-size: 11px;
+        padding: 9px;
+    }
+
+
+    
+body.page-index-html .navbar a img {
+        width: 17px;
+        height: 17px;
+    }
+
+
+    
+body.page-index-html .content {
+        padding: 20px 15px;
+    }
+
+
+    
+body.page-index-html .welcome-banner {
+        padding: 25px;
+    }
+
+
+    
+body.page-index-html .welcome-image {
+        display: none;
+    }
+
+
+    
+body.page-index-html .welcome-text h2 {
+        font-size: 27px;
+    }
+
+
+    
+body.page-index-html .report-section {
+        grid-template-columns: 1fr;
+    }
+
+
+    
+body.page-index-html .recent-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+
+}
+
+
+
+
+/* ==========================================================
+   item-details-backpack.html — page-specific styles
+   Scoped to body.page-item-details-backpack-html to prevent cross-page conflicts.
+   ========================================================== */
+
+        
+body.page-item-details-backpack-html, body.page-item-details-backpack-html * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        
+body.page-item-details-backpack-html {
+            font-family: 'FriggCafe';
+            background-color: #f1f1f4;
+            color: #25252b;
+        }
+
+
+        
+body.page-item-details-backpack-html header {
+            background: white;
+            padding: 15px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+
+        
+body.page-item-details-backpack-html .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+        
+body.page-item-details-backpack-html .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-item-details-backpack-html .logo h2 {
+            color: #333;
+            font-size: 21px;
+        }
+
+
+        
+body.page-item-details-backpack-html .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+
+        
+body.page-item-details-backpack-html .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #d45b91;
+            font-weight: bold;
+        }
+
+
+        
+body.page-item-details-backpack-html .details-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 35px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+
+        
+body.page-item-details-backpack-html .item-image {
+            background: #f8f8fa;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 350px;
+            padding: 20px;
+        }
+
+
+        
+body.page-item-details-backpack-html .item-image img {
+            max-width: 100%;
+            max-height: 310px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-item-details-backpack-html .status {
+            display: inline-block;
+            background: #fde5e5;
+            color: #c0392b;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+
+        
+body.page-item-details-backpack-html .item-info h1 {
+            font-size: 30px;
+            margin-bottom: 12px;
+            color: #292932;
+        }
+
+
+        
+body.page-item-details-backpack-html .item-info p {
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+
+        
+body.page-item-details-backpack-html .details-list {
+            margin: 20px 0;
+        }
+
+
+        
+body.page-item-details-backpack-html .detail-row {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            gap: 10px;
+        }
+
+
+        
+body.page-item-details-backpack-html .detail-row strong {
+            width: 145px;
+            color: #333;
+        }
+
+
+        
+body.page-item-details-backpack-html .detail-row span {
+            color: #666;
+        }
+
+
+        
+body.page-item-details-backpack-html .contact-section {
+            background: #faf3f7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+
+        
+body.page-item-details-backpack-html .contact-section h3 {
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+
+        
+body.page-item-details-backpack-html .contact-section p {
+            margin-bottom: 8px;
+        }
+
+
+        
+body.page-item-details-backpack-html .contact-button {
+            display: inline-block;
+            background: #d45b91;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 7px;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+
+        
+body.page-item-details-backpack-html .contact-button:hover {
+            background: #bd477d;
+        }
+
+
+        
+body.page-item-details-backpack-html footer {
+            text-align: center;
+            padding: 25px;
+            color: #777;
+            font-size: 13px;
+            margin-top: 40px;
+        }
+
+
+        
+@media (max-width: 768px)  {
+
+            
+body.page-item-details-backpack-html header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+
+            
+body.page-item-details-backpack-html .details-card {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+
+            
+body.page-item-details-backpack-html .item-image {
+                min-height: 250px;
+            }
+
+
+            
+body.page-item-details-backpack-html .item-info h1 {
+                font-size: 25px;
+            }
+
+        
+}
+
+    
+
+/* ==========================================================
+   item-details-keys.html — page-specific styles
+   Scoped to body.page-item-details-keys-html to prevent cross-page conflicts.
+   ========================================================== */
+
+        
+body.page-item-details-keys-html, body.page-item-details-keys-html * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        
+body.page-item-details-keys-html {
+            font-family: 'FriggCafe';
+            background-color: #f1f1f4;
+            color: #25252b;
+        }
+
+
+        
+body.page-item-details-keys-html header {
+            background: white;
+            padding: 15px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+
+        
+body.page-item-details-keys-html .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+        
+body.page-item-details-keys-html .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-item-details-keys-html .logo h2 {
+            color: #333;
+            font-size: 21px;
+        }
+
+
+        
+body.page-item-details-keys-html .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+
+        
+body.page-item-details-keys-html .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #d45b91;
+            font-weight: bold;
+        }
+
+
+        
+body.page-item-details-keys-html .details-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 35px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+
+        
+body.page-item-details-keys-html .item-image {
+            background: #f8f8fa;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 350px;
+            padding: 20px;
+        }
+
+
+        
+body.page-item-details-keys-html .item-image img {
+            max-width: 100%;
+            max-height: 310px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-item-details-keys-html .status {
+            display: inline-block;
+            background: #dff5e5;
+            color: #238447;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+
+        
+body.page-item-details-keys-html .item-info h1 {
+            font-size: 30px;
+            margin-bottom: 12px;
+            color: #292932;
+        }
+
+
+        
+body.page-item-details-keys-html .item-info p {
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+
+        
+body.page-item-details-keys-html .details-list {
+            margin: 20px 0;
+        }
+
+
+        
+body.page-item-details-keys-html .detail-row {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            gap: 10px;
+        }
+
+
+        
+body.page-item-details-keys-html .detail-row strong {
+            width: 145px;
+            color: #333;
+        }
+
+
+        
+body.page-item-details-keys-html .detail-row span {
+            color: #666;
+        }
+
+
+        
+body.page-item-details-keys-html .contact-section {
+            background: #faf3f7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+
+        
+body.page-item-details-keys-html .contact-section h3 {
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+
+        
+body.page-item-details-keys-html .contact-section p {
+            margin-bottom: 8px;
+        }
+
+
+        
+body.page-item-details-keys-html .contact-button {
+            display: inline-block;
+            background: #d45b91;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 7px;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+
+        
+body.page-item-details-keys-html .contact-button:hover {
+            background: #bd477d;
+        }
+
+
+        
+body.page-item-details-keys-html footer {
+            text-align: center;
+            padding: 25px;
+            color: #777;
+            font-size: 13px;
+            margin-top: 40px;
+        }
+
+
+        
+@media (max-width: 768px)  {
+
+            
+body.page-item-details-keys-html .details-card {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+
+            
+body.page-item-details-keys-html .item-image {
+                min-height: 250px;
+            }
+
+
+            
+body.page-item-details-keys-html .item-info h1 {
+                font-size: 25px;
+            }
+
+        
+}
+
+    
+
+/* ==========================================================
+   item-details-phone.html — page-specific styles
+   Scoped to body.page-item-details-phone-html to prevent cross-page conflicts.
+   ========================================================== */
+
+        
+body.page-item-details-phone-html, body.page-item-details-phone-html * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        
+body.page-item-details-phone-html {
+            font-family: 'FriggCafe';
+            background-color: #f1f1f4;
+            color: #25252b;
+        }
+
+
+        
+body.page-item-details-phone-html header {
+            background: white;
+            padding: 15px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+
+        
+body.page-item-details-phone-html .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+        
+body.page-item-details-phone-html .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-item-details-phone-html .logo h2 {
+            color: #333;
+            font-size: 21px;
+        }
+
+
+        
+body.page-item-details-phone-html .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+
+        
+body.page-item-details-phone-html .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #d45b91;
+            font-weight: bold;
+        }
+
+
+        
+body.page-item-details-phone-html .details-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 35px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+
+        
+body.page-item-details-phone-html .item-image {
+            background: #f8f8fa;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 350px;
+            padding: 20px;
+        }
+
+
+        
+body.page-item-details-phone-html .item-image img {
+            max-width: 100%;
+            max-height: 310px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-item-details-phone-html .status {
+            display: inline-block;
+            background: #fde5e5;
+            color: #c0392b;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+
+        
+body.page-item-details-phone-html .item-info h1 {
+            font-size: 30px;
+            margin-bottom: 12px;
+            color: #292932;
+        }
+
+
+        
+body.page-item-details-phone-html .item-info p {
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+
+        
+body.page-item-details-phone-html .details-list {
+            margin: 20px 0;
+        }
+
+
+        
+body.page-item-details-phone-html .detail-row {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            gap: 10px;
+        }
+
+
+        
+body.page-item-details-phone-html .detail-row strong {
+            width: 145px;
+            color: #333;
+        }
+
+
+        
+body.page-item-details-phone-html .detail-row span {
+            color: #666;
+        }
+
+
+        
+body.page-item-details-phone-html .contact-section {
+            background: #faf3f7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+
+        
+body.page-item-details-phone-html .contact-section h3 {
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+
+        
+body.page-item-details-phone-html .contact-section p {
+            margin-bottom: 8px;
+        }
+
+
+        
+body.page-item-details-phone-html .contact-button {
+            display: inline-block;
+            background: #d45b91;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 7px;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+
+        
+body.page-item-details-phone-html .contact-button:hover {
+            background: #bd477d;
+        }
+
+
+        
+body.page-item-details-phone-html footer {
+            text-align: center;
+            padding: 25px;
+            color: #777;
+            font-size: 13px;
+            margin-top: 40px;
+        }
+
+
+        
+@media (max-width: 768px)  {
+
+            
+body.page-item-details-phone-html .details-card {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+
+            
+body.page-item-details-phone-html .item-image {
+                min-height: 250px;
+            }
+
+
+            
+body.page-item-details-phone-html .item-info h1 {
+                font-size: 25px;
+            }
+
+        
+}
+
+    
+
+/* ==========================================================
+   item-details-wallet.html — page-specific styles
+   Scoped to body.page-item-details-wallet-html to prevent cross-page conflicts.
+   ========================================================== */
+
+        
+body.page-item-details-wallet-html, body.page-item-details-wallet-html * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        
+body.page-item-details-wallet-html {
+            font-family: 'FriggCafe';
+            background-color: #f1f1f4;
+            color: #25252b;
+        }
+
+
+        
+body.page-item-details-wallet-html header {
+            background: white;
+            padding: 15px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+
+        
+body.page-item-details-wallet-html .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+        
+body.page-item-details-wallet-html .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-item-details-wallet-html .logo h2 {
+            color: #333;
+            font-size: 21px;
+        }
+
+
+        
+body.page-item-details-wallet-html .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+
+        
+body.page-item-details-wallet-html .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #d45b91;
+            font-weight: bold;
+        }
+
+
+        
+body.page-item-details-wallet-html .details-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 35px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+
+        
+body.page-item-details-wallet-html .item-image {
+            background: #f8f8fa;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 350px;
+            padding: 20px;
+        }
+
+
+        
+body.page-item-details-wallet-html .item-image img {
+            max-width: 100%;
+            max-height: 310px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-item-details-wallet-html .status {
+            display: inline-block;
+            background: #dff5e5;
+            color: #238447;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+
+        
+body.page-item-details-wallet-html .item-info h1 {
+            font-size: 30px;
+            margin-bottom: 12px;
+            color: #292932;
+        }
+
+
+        
+body.page-item-details-wallet-html .item-info p {
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+
+        
+body.page-item-details-wallet-html .details-list {
+            margin: 20px 0;
+        }
+
+
+        
+body.page-item-details-wallet-html .detail-row {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            gap: 10px;
+        }
+
+
+        
+body.page-item-details-wallet-html .detail-row strong {
+            width: 145px;
+            color: #333;
+        }
+
+
+        
+body.page-item-details-wallet-html .detail-row span {
+            color: #666;
+        }
+
+
+        
+body.page-item-details-wallet-html .contact-section {
+            background: #faf3f7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+
+        
+body.page-item-details-wallet-html .contact-section h3 {
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+
+        
+body.page-item-details-wallet-html .contact-section p {
+            margin-bottom: 8px;
+        }
+
+
+        
+body.page-item-details-wallet-html .contact-button {
+            display: inline-block;
+            background: #d45b91;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 7px;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+
+        
+body.page-item-details-wallet-html .contact-button:hover {
+            background: #bd477d;
+        }
+
+
+        
+body.page-item-details-wallet-html footer {
+            text-align: center;
+            padding: 25px;
+            color: #777;
+            font-size: 13px;
+            margin-top: 40px;
+        }
+
+
+        
+@media (max-width: 768px)  {
+
+            
+body.page-item-details-wallet-html .details-card {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+
+            
+body.page-item-details-wallet-html .item-image {
+                min-height: 250px;
+            }
+
+
+            
+body.page-item-details-wallet-html .item-info h1 {
+                font-size: 25px;
+            }
+
+        
+}
+
+    
+
+/* ==========================================================
+   item-details-water-bottle.html — page-specific styles
+   Scoped to body.page-item-details-water-bottle-html to prevent cross-page conflicts.
+   ========================================================== */
+
+        
+body.page-item-details-water-bottle-html, body.page-item-details-water-bottle-html * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        
+body.page-item-details-water-bottle-html {
+            font-family: 'FriggCafe';
+            background-color: #f1f1f4;
+            color: #25252b;
+        }
+
+
+        
+body.page-item-details-water-bottle-html header {
+            background: white;
+            padding: 15px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+
+        
+body.page-item-details-water-bottle-html .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .logo h2 {
+            color: #333;
+            font-size: 21px;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #d45b91;
+            font-weight: bold;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .details-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 35px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+
+        
+body.page-item-details-water-bottle-html .item-image {
+            background: #f8f8fa;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 350px;
+            padding: 20px;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .item-image img {
+            max-width: 100%;
+            max-height: 310px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .status {
+            display: inline-block;
+            background: #dff5e5;
+            color: #238447;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .item-info h1 {
+            font-size: 30px;
+            margin-bottom: 12px;
+            color: #292932;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .item-info p {
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .details-list {
+            margin: 20px 0;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .detail-row {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            gap: 10px;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .detail-row strong {
+            width: 145px;
+            color: #333;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .detail-row span {
+            color: #666;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .contact-section {
+            background: #faf3f7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .contact-section h3 {
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .contact-section p {
+            margin-bottom: 8px;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .contact-button {
+            display: inline-block;
+            background: #d45b91;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 7px;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+
+        
+body.page-item-details-water-bottle-html .contact-button:hover {
+            background: #bd477d;
+        }
+
+
+        
+body.page-item-details-water-bottle-html footer {
+            text-align: center;
+            padding: 25px;
+            color: #777;
+            font-size: 13px;
+            margin-top: 40px;
+        }
+
+
+        
+@media (max-width: 768px)  {
+
+            
+body.page-item-details-water-bottle-html header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+
+            
+body.page-item-details-water-bottle-html .details-card {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+
+            
+body.page-item-details-water-bottle-html .item-image {
+                min-height: 250px;
+            }
+
+
+            
+body.page-item-details-water-bottle-html .item-info h1 {
+                font-size: 25px;
+            }
+
+        
+}
+
+    
+
+/* ==========================================================
+   login.html — page-specific styles
+   Scoped to body.page-login-html to prevent cross-page conflicts.
+   ========================================================== */
+
+
+        
+/* Para consistent ang sizing ng lahat ng elements */
+
+        
+body.page-login-html, body.page-login-html * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'FriggCafe';
+        }
+
+
+        
+body.page-login-html {
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        
+/* MAIN PAGE LAYOUT */
+
+
+        
+body.page-login-html .main-container {
+            display: flex;
+            flex: 1;
+            min-height: 650px;
+        }
+
+
+        
+/* LEFT SIDE */
+
+
+        
+body.page-login-html .welcome-section {
+            flex: 1;
+            background-color: #242428;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+
+        
+body.page-login-html .welcome-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+
+
+        
+body.page-login-html .welcome-logo img {
+            width: 75px;
+            height: 75px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-login-html .welcome-logo h1 {
+            font-size: 27px;
+            text-align: left;
+        }
+
+
+        
+body.page-login-html .welcome-logo h1 span {
+            color: #ed4353;
+        }
+
+
+        
+body.page-login-html .welcome-logo p {
+            color: #dddddd;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-top: 6px;
+            text-align: left;
+        }
+
+
+        
+body.page-login-html .welcome-section h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+
+        
+body.page-login-html .welcome-section > p {
+            color: #dddddd;
+            font-size: 14px;
+            line-height: 1.8;
+            max-width: 400px;
+        }
+
+
+        
+body.page-login-html .welcome-image {
+            width: 220px;
+            height: 180px;
+            margin: 30px 0;
+            object-fit: contain;
+        }
+
+
+        
+body.page-login-html .back-home {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            margin-top: 25px;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-login-html .back-home:hover {
+            color: #ed4353;
+        }
+
+
+        
+/* RIGHT SIDE */
+
+
+        
+body.page-login-html .form-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            background-color: #ffffff;
+        }
+
+
+        
+body.page-login-html .form-container {
+            width: 100%;
+            max-width: 420px;
+        }
+
+
+        
+body.page-login-html .form-heading {
+            margin-bottom: 30px;
+        }
+
+
+        
+body.page-login-html .form-heading h2 {
+            font-size: 28px;
+            color: #242428;
+            margin-bottom: 10px;
+        }
+
+
+        
+body.page-login-html .form-heading p {
+            color: #777777;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+
+        
+/* FORM INPUTS */
+
+
+        
+body.page-login-html .form-group {
+            margin-bottom: 20px;
+        }
+
+
+        
+body.page-login-html .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 9px;
+        }
+
+
+        
+body.page-login-html .form-group input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #cccccc;
+            border-radius: 7px;
+            font-size: 13px;
+            outline: none;
+        }
+
+
+        
+body.page-login-html .form-group input:focus {
+            border-color: #c92335;
+        }
+
+
+        
+/* FORGOT PASSWORD */
+
+
+        
+body.page-login-html .forgot-password {
+            text-align: right;
+            margin-top: -8px;
+            margin-bottom: 22px;
+        }
+
+
+        
+body.page-login-html .forgot-password a {
+            color: #c92335;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+
+        
+body.page-login-html .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+
+        
+/* REMEMBER ME */
+
+
+        
+body.page-login-html .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 22px;
+        }
+
+
+        
+body.page-login-html .remember-me input {
+            accent-color: #c92335;
+        }
+
+
+        
+body.page-login-html .remember-me label {
+            font-size: 12px;
+            color: #666666;
+        }
+
+
+        
+/* SUBMIT BUTTON */
+
+
+        
+body.page-login-html .submit-button {
+            width: 100%;
+            padding: 14px;
+            background-color: #c92335;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-login-html .submit-button:hover {
+            background-color: #a91d2d;
+        }
+
+
+        
+/* DIVIDER */
+
+
+        
+body.page-login-html .divider {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 25px 0;
+            color: #aaaaaa;
+            font-size: 11px;
+        }
+
+
+        
+body.page-login-html .divider::before,
+body.page-login-html .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: #eeeeee;
+        }
+
+
+        
+/* FOOTER */
+
+
+        
+body.page-login-html .footer {
+            background-color: #242428;
+            color: #dddddd;
+            text-align: center;
+            padding: 18px;
+            font-size: 11px;
+        }
+
+
+        
+/* PARA MAAYOS SA SMALLER SCREENS */
+
+
+        
+@media screen and (max-width: 800px)  {
+
+
+            
+body.page-login-html .main-container {
+                flex-direction: column;
+            }
+
+
+            
+body.page-login-html .welcome-section {
+                padding: 35px 20px;
+            }
+
+
+            
+body.page-login-html .welcome-section h2 {
+                font-size: 25px;
+            }
+
+
+            
+body.page-login-html .welcome-image {
+                width: 150px;
+                height: 120px;
+                margin: 20px 0;
+            }
+
+
+            
+body.page-login-html .form-section {
+                padding: 40px 20px;
+            }
+
+
+        
+}
+
+
+        
+@media screen and (max-width: 450px)  {
+
+
+            
+body.page-login-html .welcome-logo img {
+                width: 55px;
+                height: 55px;
+            }
+
+
+            
+body.page-login-html .welcome-logo h1 {
+                font-size: 21px;
+            }
+
+
+            
+body.page-login-html .welcome-section h2 {
+                font-size: 22px;
+            }
+
+
+            
+body.page-login-html .form-heading h2 {
+                font-size: 24px;
+            }
+
+
+        
+}
+
+
+    
+
+/* ==========================================================
+   my-posts.html — page-specific styles
+   Scoped to body.page-my-posts-html to prevent cross-page conflicts.
+   ========================================================== */
+
+
+        
+/* Para consistent ang sizing ng lahat ng elements */
+
+        
+body.page-my-posts-html, body.page-my-posts-html * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'FriggCafe';
+        }
+
+
+        
+body.page-my-posts-html {
+            background-color: #f5f5f5;
+            color: #242428;
+        }
+
+
+        
+/* HEADER AND NAVIGATION */
+
+
+        
+body.page-my-posts-html .header {
+            background-color: #242428;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            gap: 20px;
+        }
+
+
+        
+body.page-my-posts-html .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+
+        
+body.page-my-posts-html .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-my-posts-html .logo-text h1 {
+            color: white;
+            font-size: 23px;
+        }
+
+
+        
+body.page-my-posts-html .logo-text h1 span {
+            color: #ed4353;
+        }
+
+
+        
+body.page-my-posts-html .logo-text p {
+            color: #dddddd;
+            font-size: 12px;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+
+
+        
+body.page-my-posts-html .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+
+        
+body.page-my-posts-html .navbar a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 13px;
+            border-radius: 7px;
+            color: #eeeeee;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-my-posts-html .navbar a img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-my-posts-html .navbar a:hover {
+            background-color: #414146;
+        }
+
+
+        
+body.page-my-posts-html .navbar a.active {
+            background-color: #c92335;
+            color: white;
+        }
+
+
+        
+body.page-my-posts-html .header-account {
+            flex-shrink: 0;
+        }
+
+
+        
+body.page-my-posts-html .login-button {
+            display: inline-block;
+            background-color: #c92335;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-my-posts-html .login-button:hover {
+            background-color: #a91d2d;
+        }
+
+
+        
+/* MAIN CONTENT */
+
+
+        
+body.page-my-posts-html .main-container {
+            max-width: 1150px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+
+        
+/* PAGE HEADING */
+
+
+        
+body.page-my-posts-html .page-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+
+        
+body.page-my-posts-html .page-heading h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+
+        
+body.page-my-posts-html .page-heading p {
+            color: #777777;
+            font-size: 14px;
+        }
+
+
+        
+body.page-my-posts-html .new-report-button {
+            display: inline-block;
+            background-color: #c92335;
+            color: white;
+            padding: 13px 18px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-my-posts-html .new-report-button:hover {
+            background-color: #a91d2d;
+        }
+
+
+        
+/* POSTS CONTAINER */
+
+
+        
+body.page-my-posts-html .posts-container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+
+        
+/* POST TABS */
+
+
+        
+body.page-my-posts-html .post-tabs {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+
+        
+body.page-my-posts-html .post-tabs a {
+            color: #666666;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 11px 15px;
+            border-radius: 7px;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-my-posts-html .post-tabs a:hover {
+            background-color: #fff0f2;
+            color: #c92335;
+        }
+
+
+        
+body.page-my-posts-html .post-tabs a.active {
+            background-color: #c92335;
+            color: white;
+        }
+
+
+        
+/* POSTS SUMMARY */
+
+
+        
+body.page-my-posts-html .posts-summary {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+
+        
+body.page-my-posts-html .summary-card {
+            flex: 1;
+            background-color: #fafafa;
+            border: 1px solid #eeeeee;
+            border-radius: 8px;
+            padding: 17px;
+        }
+
+
+        
+body.page-my-posts-html .summary-card p {
+            color: #777777;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+
+        
+body.page-my-posts-html .summary-card h3 {
+            font-size: 23px;
+            color: #242428;
+        }
+
+
+        
+/* POSTS SECTION HEADING */
+
+
+        
+body.page-my-posts-html .posts-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+
+        
+body.page-my-posts-html .posts-heading h3 {
+            font-size: 18px;
+        }
+
+
+        
+body.page-my-posts-html .posts-heading p {
+            color: #888888;
+            font-size: 12px;
+        }
+
+
+        
+/* ITEM CARDS */
+
+
+        
+body.page-my-posts-html .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+
+        
+body.page-my-posts-html .post-card {
+            border: 1px solid #eeeeee;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-my-posts-html .post-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
+            transform: translateY(-3px);
+        }
+
+
+        
+body.page-my-posts-html .post-image {
+            width: 100%;
+            height: 175px;
+            background-color: #f1f1f1;
+            overflow: hidden;
+        }
+
+
+        
+body.page-my-posts-html .post-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        
+body.page-my-posts-html .post-details {
+            padding: 17px;
+        }
+
+
+        
+body.page-my-posts-html .post-status {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+
+        
+body.page-my-posts-html .status-lost {
+            background-color: #ffe5e8;
+            color: #c92335;
+        }
+
+
+        
+body.page-my-posts-html .status-found {
+            background-color: #e2f5e8;
+            color: #238344;
+        }
+
+
+        
+body.page-my-posts-html .status-resolved {
+            background-color: #eeeeee;
+            color: #666666;
+        }
+
+
+        
+body.page-my-posts-html .post-details h4 {
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+
+
+        
+body.page-my-posts-html .post-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 9px;
+            color: #777777;
+            font-size: 12px;
+        }
+
+
+        
+body.page-my-posts-html .post-info img {
+            width: 15px;
+            height: 15px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-my-posts-html .post-description {
+            color: #777777;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 12px 0 17px;
+        }
+
+
+        
+/* CARD BUTTONS */
+
+
+        
+body.page-my-posts-html .view-button {
+            display: block;
+            text-align: center;
+            background-color: #fff0f2;
+            color: #c92335;
+            padding: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-my-posts-html .view-button:hover {
+            background-color: #ffe0e4;
+        }
+
+
+        
+body.page-my-posts-html .card-actions {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+
+        
+body.page-my-posts-html .card-actions a {
+            flex: 1;
+            text-align: center;
+            text-decoration: none;
+            padding: 9px 5px;
+            border: 1px solid #dddddd;
+            border-radius: 6px;
+            color: #555555;
+            font-size: 11px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-my-posts-html .card-actions a:hover {
+            background-color: #f1f1f1;
+        }
+
+
+        
+body.page-my-posts-html .card-actions a.delete-button {
+            color: #c92335;
+            border-color: #f0c5cb;
+        }
+
+
+        
+body.page-my-posts-html .card-actions a.delete-button:hover {
+            background-color: #fff0f2;
+        }
+
+
+        
+body.page-my-posts-html .card-actions a.resolve-button {
+            color: #238344;
+            border-color: #b8dfc4;
+        }
+
+
+        
+body.page-my-posts-html .card-actions a.resolve-button:hover {
+            background-color: #eaf7ee;
+        }
+
+
+        
+/* EMPTY POSTS MESSAGE */
+
+
+        
+body.page-my-posts-html .empty-posts {
+            text-align: center;
+            padding: 55px 20px;
+            color: #777777;
+        }
+
+
+        
+body.page-my-posts-html .empty-posts h3 {
+            color: #242428;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+
+        
+body.page-my-posts-html .empty-posts p {
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+
+        
+/* FOOTER */
+
+
+        
+body.page-my-posts-html .footer {
+            background-color: #242428;
+            color: #dddddd;
+            text-align: center;
+            padding: 22px;
+            font-size: 12px;
+            margin-top: 50px;
+        }
+
+
+        
+/* Para maayos pa rin ang layout sa smaller screens */
+
+        
+@media screen and (max-width: 1200px)  {
+
+            
+body.page-my-posts-html .header {
+                flex-wrap: wrap;
+            }
+
+
+            
+body.page-my-posts-html .navbar {
+                order: 3;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+        
+}
+
+
+        
+@media screen and (max-width: 850px)  {
+
+            
+body.page-my-posts-html .posts-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        
+}
+
+
+        
+@media screen and (max-width: 600px)  {
+
+            
+body.page-my-posts-html .header {
+                justify-content: center;
+                padding: 15px;
+            }
+
+
+            
+body.page-my-posts-html .logo-text h1 {
+                font-size: 19px;
+            }
+
+
+            
+body.page-my-posts-html .navbar {
+                gap: 3px;
+            }
+
+
+            
+body.page-my-posts-html .navbar a {
+                font-size: 11px;
+                padding: 9px;
+            }
+
+
+            
+body.page-my-posts-html .navbar a img {
+                width: 17px;
+                height: 17px;
+            }
+
+
+            
+body.page-my-posts-html .main-container {
+                margin: 25px auto;
+                padding: 0 12px;
+            }
+
+
+            
+body.page-my-posts-html .page-heading {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+
+            
+body.page-my-posts-html .page-heading h2 {
+                font-size: 24px;
+            }
+
+
+            
+body.page-my-posts-html .posts-container {
+                padding: 17px;
+            }
+
+
+            
+body.page-my-posts-html .post-tabs {
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+
+
+            
+body.page-my-posts-html .post-tabs a {
+                font-size: 11px;
+                padding: 9px 10px;
+            }
+
+
+            
+body.page-my-posts-html .posts-summary {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+
+            
+body.page-my-posts-html .posts-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            
+body.page-my-posts-html .posts-heading {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 7px;
+            }
+
+        
+}
+
+
+    
+
+/* ==========================================================
+   notifications.html — page-specific styles
+   Scoped to body.page-notifications-html to prevent cross-page conflicts.
+   ========================================================== */
+
+
+        
+/* Para consistent ang sizing ng lahat ng elements */
+
+        
+body.page-notifications-html, body.page-notifications-html * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'FriggCafe';
+        }
+
+
+        
+body.page-notifications-html {
+            background-color: #f5f5f5;
+            color: #242428;
+        }
+
+
+        
+/* HEADER AND NAVIGATION */
+
+
+        
+body.page-notifications-html .header {
+            background-color: #242428;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            gap: 20px;
+        }
+
+
+        
+body.page-notifications-html .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+
+        
+body.page-notifications-html .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-notifications-html .logo-text h1 {
+            color: white;
+            font-size: 23px;
+        }
+
+
+        
+body.page-notifications-html .logo-text h1 span {
+            color: #ed4353;
+        }
+
+
+        
+body.page-notifications-html .logo-text p {
+            color: #dddddd;
+            font-size: 12px;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+
+
+        
+body.page-notifications-html .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+
+        
+body.page-notifications-html .navbar a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 13px;
+            border-radius: 7px;
+            color: #eeeeee;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-notifications-html .navbar a img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-notifications-html .navbar a:hover {
+            background-color: #414146;
+        }
+
+
+        
+body.page-notifications-html .navbar a.active {
+            background-color: #c92335;
+            color: white;
+        }
+
+
+        
+body.page-notifications-html .header-account {
+            flex-shrink: 0;
+        }
+
+
+        
+body.page-notifications-html .login-button {
+            display: inline-block;
+            background-color: #c92335;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-notifications-html .login-button:hover {
+            background-color: #a91d2d;
+        }
+
+
+        
+/* MAIN CONTENT */
+
+
+        
+body.page-notifications-html .main-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+
+        
+/* PAGE HEADING */
+
+
+        
+body.page-notifications-html .page-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+
+        
+body.page-notifications-html .page-heading h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+
+        
+body.page-notifications-html .page-heading p {
+            color: #777777;
+            font-size: 14px;
+        }
+
+
+        
+body.page-notifications-html .unread-count {
+            background-color: #ffe5e8;
+            color: #c92335;
+            padding: 9px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+
+        
+/* NOTIFICATIONS CONTAINER */
+
+
+        
+body.page-notifications-html .notifications-container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+
+        
+/* NOTIFICATION ACTIONS */
+
+
+        
+body.page-notifications-html .notification-actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+
+        
+body.page-notifications-html .notification-tabs {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+
+        
+body.page-notifications-html .notification-tabs a {
+            text-decoration: none;
+            color: #666666;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 7px;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-notifications-html .notification-tabs a:hover {
+            background-color: #fff0f2;
+            color: #c92335;
+        }
+
+
+        
+body.page-notifications-html .notification-tabs a.active {
+            background-color: #c92335;
+            color: white;
+        }
+
+
+        
+body.page-notifications-html .mark-read {
+            color: #c92335;
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+
+        
+body.page-notifications-html .mark-read:hover {
+            text-decoration: underline;
+        }
+
+
+        
+/* NOTIFICATION DATE HEADING */
+
+
+        
+body.page-notifications-html .date-heading {
+            color: #888888;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 25px 0 12px;
+        }
+
+
+        
+/* NOTIFICATION CARDS */
+
+
+        
+body.page-notifications-html .notification-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            border: 1px solid #eeeeee;
+            border-radius: 9px;
+            margin-bottom: 12px;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-notifications-html .notification-card:hover {
+            background-color: #fafafa;
+        }
+
+
+        
+/* Unread notification style */
+
+        
+body.page-notifications-html .notification-card.unread {
+            background-color: #fff8f9;
+            border-left: 4px solid #c92335;
+        }
+
+
+        
+body.page-notifications-html .notification-content {
+            flex: 1;
+        }
+
+
+        
+body.page-notifications-html .notification-content h3 {
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+
+
+        
+body.page-notifications-html .notification-content p {
+            color: #666666;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 9px;
+        }
+
+
+        
+body.page-notifications-html .notification-time {
+            color: #999999;
+            font-size: 11px;
+        }
+
+
+        
+body.page-notifications-html .notification-link {
+            display: inline-block;
+            color: #c92335;
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+
+        
+body.page-notifications-html .notification-link:hover {
+            text-decoration: underline;
+        }
+
+
+        
+body.page-notifications-html .unread-dot {
+            width: 9px;
+            height: 9px;
+            background-color: #c92335;
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+
+
+        
+/* EMPTY NOTIFICATIONS */
+
+
+        
+body.page-notifications-html .empty-notifications {
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+
+        
+body.page-notifications-html .empty-notifications h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+
+        
+body.page-notifications-html .empty-notifications p {
+            color: #888888;
+            font-size: 13px;
+        }
+
+
+        
+/* FOOTER */
+
+
+        
+body.page-notifications-html .footer {
+            background-color: #242428;
+            color: #dddddd;
+            text-align: center;
+            padding: 22px;
+            font-size: 12px;
+            margin-top: 50px;
+        }
+
+
+        
+/* Para maayos pa rin ang layout sa smaller screens */
+
+        
+@media screen and (max-width: 1200px)  {
+
+            
+body.page-notifications-html .header {
+                flex-wrap: wrap;
+            }
+
+
+            
+body.page-notifications-html .navbar {
+                order: 3;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+        
+}
+
+
+        
+@media screen and (max-width: 600px)  {
+
+            
+body.page-notifications-html .header {
+                justify-content: center;
+                padding: 15px;
+            }
+
+
+            
+body.page-notifications-html .logo-text h1 {
+                font-size: 19px;
+            }
+
+
+            
+body.page-notifications-html .navbar {
+                gap: 3px;
+            }
+
+
+            
+body.page-notifications-html .navbar a {
+                font-size: 11px;
+                padding: 9px;
+            }
+
+
+            
+body.page-notifications-html .navbar a img {
+                width: 17px;
+                height: 17px;
+            }
+
+
+            
+body.page-notifications-html .main-container {
+                margin: 25px auto;
+                padding: 0 12px;
+            }
+
+
+            
+body.page-notifications-html .page-heading {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+
+            
+body.page-notifications-html .page-heading h2 {
+                font-size: 24px;
+            }
+
+
+            
+body.page-notifications-html .notifications-container {
+                padding: 17px;
+            }
+
+
+            
+body.page-notifications-html .notification-actions {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+
+            
+body.page-notifications-html .notification-tabs {
+                flex-wrap: wrap;
+            }
+
+
+            
+body.page-notifications-html .notification-tabs a {
+                font-size: 11px;
+                padding: 9px 10px;
+            }
+
+
+            
+body.page-notifications-html .notification-card {
+                padding: 14px;
+                gap: 10px;
+            }
+
+
+            
+body.page-notifications-html .notification-content h3 {
+                font-size: 13px;
+            }
+
+
+            
+body.page-notifications-html .notification-content p {
+                font-size: 12px;
+            }
+
+        
+}
+
+
+    
+
+/* ==========================================================
+   profile.html — page-specific styles
+   Scoped to body.page-profile-html to prevent cross-page conflicts.
+   ========================================================== */
+
+
+        
+/* Para consistent ang sizing ng lahat ng elements */
+
+        
+body.page-profile-html, body.page-profile-html * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'FriggCafe';
+        }
+
+
+        
+body.page-profile-html {
+            background-color: #f5f5f5;
+            color: #242428;
+        }
+
+
+        
+/* HEADER AND NAVIGATION */
+
+
+        
+body.page-profile-html .header {
+            background-color: #242428;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            gap: 20px;
+        }
+
+
+        
+body.page-profile-html .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+
+        
+body.page-profile-html .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-profile-html .logo-text h1 {
+            color: white;
+            font-size: 23px;
+        }
+
+
+        
+body.page-profile-html .logo-text h1 span {
+            color: #ed4353;
+        }
+
+
+        
+body.page-profile-html .logo-text p {
+            color: #dddddd;
+            font-size: 12px;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+
+
+        
+body.page-profile-html .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+
+        
+body.page-profile-html .navbar a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 13px;
+            border-radius: 7px;
+            color: #eeeeee;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-profile-html .navbar a img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-profile-html .navbar a:hover {
+            background-color: #414146;
+        }
+
+
+        
+body.page-profile-html .navbar a.active {
+            background-color: #c92335;
+            color: white;
+        }
+
+
+        
+body.page-profile-html .header-account {
+            flex-shrink: 0;
+        }
+
+
+        
+body.page-profile-html .login-button {
+            display: inline-block;
+            background-color: #c92335;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-profile-html .login-button:hover {
+            background-color: #a91d2d;
+        }
+
+
+        
+/* MAIN CONTENT */
+
+
+        
+body.page-profile-html .main-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+
+        
+/* PAGE HEADING */
+
+
+        
+body.page-profile-html .page-heading {
+            margin-bottom: 25px;
+        }
+
+
+        
+body.page-profile-html .page-heading h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+
+        
+body.page-profile-html .page-heading p {
+            color: #777777;
+            font-size: 14px;
+        }
+
+
+        
+/* PROFILE HEADER CARD */
+
+
+        
+body.page-profile-html .profile-header {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+
+        
+body.page-profile-html .profile-user {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+
+        
+body.page-profile-html .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ffe5e8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+
+        
+body.page-profile-html .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        
+body.page-profile-html .profile-user-info h3 {
+            font-size: 22px;
+            margin-bottom: 7px;
+        }
+
+
+        
+body.page-profile-html .profile-user-info p {
+            color: #777777;
+            font-size: 13px;
+            margin-bottom: 7px;
+        }
+
+
+        
+body.page-profile-html .member-label {
+            display: inline-block;
+            background-color: #fff0f2;
+            color: #c92335;
+            padding: 6px 10px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+
+        
+body.page-profile-html .edit-profile-button {
+            background-color: #c92335;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-profile-html .edit-profile-button:hover {
+            background-color: #a91d2d;
+        }
+
+
+        
+/* PROFILE LAYOUT */
+
+
+        
+body.page-profile-html .profile-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            align-items: start;
+        }
+
+
+        
+body.page-profile-html .profile-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+
+        
+body.page-profile-html .profile-card h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding-bottom: 13px;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+
+        
+/* PERSONAL INFORMATION */
+
+
+        
+body.page-profile-html .info-item {
+            margin-bottom: 20px;
+        }
+
+
+        
+body.page-profile-html .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+
+        
+body.page-profile-html .info-item label {
+            display: block;
+            color: #999999;
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+
+        
+body.page-profile-html .info-item p {
+            color: #333333;
+            font-size: 13px;
+        }
+
+
+        
+/* ACCOUNT INFORMATION */
+
+
+        
+body.page-profile-html .account-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 14px 0;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+
+        
+body.page-profile-html .account-item:last-child {
+            border-bottom: none;
+        }
+
+
+        
+body.page-profile-html .account-item div p:first-child {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+
+        
+body.page-profile-html .account-item div p:last-child {
+            color: #888888;
+            font-size: 11px;
+        }
+
+
+        
+body.page-profile-html .account-item a {
+            color: #c92335;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+
+        
+body.page-profile-html .account-item a:hover {
+            text-decoration: underline;
+        }
+
+
+        
+/* REPORT SUMMARY */
+
+
+        
+body.page-profile-html .report-summary {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            margin-top: 22px;
+        }
+
+
+        
+body.page-profile-html .report-summary h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+
+        
+body.page-profile-html .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+
+        
+body.page-profile-html .summary-box {
+            background-color: #fafafa;
+            border: 1px solid #eeeeee;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+
+        
+body.page-profile-html .summary-box h4 {
+            color: #c92335;
+            font-size: 25px;
+            margin-bottom: 7px;
+        }
+
+
+        
+body.page-profile-html .summary-box p {
+            color: #777777;
+            font-size: 12px;
+        }
+
+
+        
+/* ACCOUNT ACTIONS */
+
+
+        
+body.page-profile-html .account-actions {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            margin-top: 22px;
+        }
+
+
+        
+body.page-profile-html .account-actions h3 {
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+
+
+        
+body.page-profile-html .action-links {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+
+        
+body.page-profile-html .action-links a {
+            display: inline-block;
+            color: #555555;
+            border: 1px solid #dddddd;
+            border-radius: 7px;
+            padding: 12px 18px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-profile-html .action-links a:hover {
+            background-color: #f1f1f1;
+        }
+
+
+        
+body.page-profile-html .action-links a.logout-button {
+            color: #c92335;
+            border-color: #f0c5cb;
+        }
+
+
+        
+body.page-profile-html .action-links a.logout-button:hover {
+            background-color: #fff0f2;
+        }
+
+
+        
+/* FOOTER */
+
+
+        
+body.page-profile-html .footer {
+            background-color: #242428;
+            color: #dddddd;
+            text-align: center;
+            padding: 22px;
+            font-size: 12px;
+            margin-top: 50px;
+        }
+
+
+        
+/* Para maayos pa rin ang layout sa smaller screens */
+
+        
+@media screen and (max-width: 1200px)  {
+
+            
+body.page-profile-html .header {
+                flex-wrap: wrap;
+            }
+
+
+            
+body.page-profile-html .navbar {
+                order: 3;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+        
+}
+
+
+        
+@media screen and (max-width: 700px)  {
+
+            
+body.page-profile-html .profile-layout {
+                grid-template-columns: 1fr;
+            }
+
+
+            
+body.page-profile-html .profile-header {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+
+            
+body.page-profile-html .summary-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            
+body.page-profile-html .action-links {
+                align-items: stretch;
+                flex-direction: column;
+            }
+
+
+            
+body.page-profile-html .action-links a {
+                text-align: center;
+            }
+
+        
+}
+
+
+        
+@media screen and (max-width: 600px)  {
+
+            
+body.page-profile-html .header {
+                justify-content: center;
+                padding: 15px;
+            }
+
+
+            
+body.page-profile-html .logo-text h1 {
+                font-size: 19px;
+            }
+
+
+            
+body.page-profile-html .navbar {
+                gap: 3px;
+            }
+
+
+            
+body.page-profile-html .navbar a {
+                font-size: 11px;
+                padding: 9px;
+            }
+
+
+            
+body.page-profile-html .navbar a img {
+                width: 17px;
+                height: 17px;
+            }
+
+
+            
+body.page-profile-html .main-container {
+                margin: 25px auto;
+                padding: 0 12px;
+            }
+
+
+            
+body.page-profile-html .page-heading h2 {
+                font-size: 24px;
+            }
+
+
+            
+body.page-profile-html .profile-header {
+                padding: 20px;
+            }
+
+
+            
+body.page-profile-html .profile-user {
+                align-items: flex-start;
+                gap: 13px;
+            }
+
+
+            
+body.page-profile-html .profile-picture {
+                width: 75px;
+                height: 75px;
+            }
+
+
+            
+body.page-profile-html .profile-user-info h3 {
+                font-size: 18px;
+            }
+
+
+            
+body.page-profile-html .profile-card,
+body.page-profile-html .report-summary,
+body.page-profile-html .account-actions {
+                padding: 20px;
+            }
+
+        
+}
+
+
+    
+
+/* ==========================================================
+   search.html — page-specific styles
+   Scoped to body.page-search-html to prevent cross-page conflicts.
+   ========================================================== */
+
+
+        
+/* Basic styling para consistent ang sizing ng elements */
+
+        
+body.page-search-html, body.page-search-html * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        
+body.page-search-html {
+            font-family: 'FriggCafe';
+            background-color: #f1f1f4;
+            color: #25252b;
+        }
+
+
+        
+body.page-search-html a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        
+/* HEADER */
+
+        
+body.page-search-html .header {
+            background-color: #242428;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            gap: 20px;
+            color: white;
+        }
+
+
+        
+/* LOGO */
+
+        
+body.page-search-html .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+
+        
+body.page-search-html .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-search-html .logo-text h1 {
+            font-size: 23px;
+            white-space: nowrap;
+        }
+
+
+        
+body.page-search-html .logo-text h1 span {
+            color: #ed4353;
+        }
+
+
+        
+body.page-search-html .logo-text p {
+            font-size: 12px;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+
+
+        
+/* NAVIGATION BAR - Same as index.html */
+
+        
+body.page-search-html .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+
+        
+/* Navigation picture icons */
+
+        
+body.page-search-html .navbar a img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-search-html .navbar a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 13px;
+            border-radius: 7px;
+            color: #eeeeee;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-search-html .navbar a:hover {
+            background-color: #414146;
+        }
+
+
+        
+/* Search ang active tab sa page na ito */
+
+        
+body.page-search-html .navbar a.active {
+            background-color: #c92335;
+            color: white;
+        }
+
+
+        
+/* LOGIN AND SIGN UP BUTTON */
+
+        
+body.page-search-html .header-account {
+            flex-shrink: 0;
+        }
+
+
+        
+body.page-search-html .login-button {
+            display: inline-block;
+            background-color: #c92335;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 7px;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-search-html .login-button:hover {
+            background-color: #a91d2d;
+        }
+
+
+        
+/* MAIN CONTENT */
+
+        
+body.page-search-html .search-content {
+            max-width: 1500px;
+            margin: auto;
+            padding: 30px 40px;
+        }
+
+
+        
+body.page-search-html .search-heading {
+            margin-bottom: 22px;
+        }
+
+
+        
+body.page-search-html .search-heading h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+
+        
+body.page-search-html .search-heading p {
+            color: #777;
+            font-size: 14px;
+        }
+
+
+        
+/* SEARCH BAR */
+
+        
+body.page-search-html .search-box {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 25px;
+            border: 1px solid #e4e4e8;
+        }
+
+
+        
+body.page-search-html .search-box img {
+            width: 23px;
+            height: 23px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-search-html .search-box input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            padding: 10px;
+        }
+
+
+        
+body.page-search-html .search-box button {
+            background-color: #c92335;
+            color: white;
+            border: none;
+            padding: 13px 28px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+
+        
+/* SEARCH LAYOUT */
+
+        
+body.page-search-html .search-layout {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 25px;
+            align-items: start;
+        }
+
+
+        
+/* FILTER SIDEBAR */
+
+        
+body.page-search-html .filter-sidebar {
+            background-color: white;
+            padding: 22px;
+            border-radius: 10px;
+            border: 1px solid #e4e4e8;
+        }
+
+
+        
+body.page-search-html .filter-sidebar h3 {
+            font-size: 19px;
+            margin-bottom: 22px;
+        }
+
+
+        
+body.page-search-html .filter-group {
+            margin-bottom: 23px;
+        }
+
+
+        
+body.page-search-html .filter-group h4 {
+            font-size: 14px;
+            margin-bottom: 13px;
+        }
+
+
+        
+body.page-search-html .filter-group label {
+            display: block;
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 11px;
+            cursor: pointer;
+        }
+
+
+        
+body.page-search-html .filter-group input {
+            margin-right: 7px;
+            accent-color: #c92335;
+        }
+
+
+        
+body.page-search-html .filter-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            background-color: white;
+            font-size: 12px;
+        }
+
+
+        
+body.page-search-html .apply-filter {
+            width: 100%;
+            background-color: #c92335;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+
+        
+/* RESULTS SECTION */
+
+        
+body.page-search-html .results-section {
+            min-width: 0;
+        }
+
+
+        
+body.page-search-html .results-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+            gap: 15px;
+        }
+
+
+        
+body.page-search-html .results-heading h3 {
+            font-size: 21px;
+        }
+
+
+        
+body.page-search-html .sort-area {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+        }
+
+
+        
+body.page-search-html .sort-area select {
+            padding: 9px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+
+        
+/* ITEM CARDS */
+
+        
+body.page-search-html .search-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 17px;
+        }
+
+
+        
+body.page-search-html .search-card {
+            background-color: white;
+            border: 1px solid #e4e4e8;
+            border-radius: 10px;
+            padding: 12px;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-search-html .search-card:hover {
+            box-shadow: 0 5px 15px #00000012;
+            transform: translateY(-3px);
+        }
+
+
+        
+body.page-search-html .search-card-image {
+            width: 100%;
+            height: 165px;
+            background-color: #ededf1;
+            border-radius: 8px;
+            object-fit: contain;
+            padding: 12px;
+            display: block;
+        }
+
+
+        
+body.page-search-html .search-card-info {
+            padding: 12px 3px 3px;
+        }
+
+
+        
+body.page-search-html .item-status {
+            display: inline-block;
+            color: white;
+            padding: 5px 11px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+
+        
+body.page-search-html .lost-status {
+            background-color: #c92335;
+        }
+
+
+        
+body.page-search-html .found-status {
+            background-color: #45a45c;
+        }
+
+
+        
+body.page-search-html .search-card-info h4 {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+
+        
+body.page-search-html .item-category {
+            color: #888;
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+
+
+        
+body.page-search-html .card-location,
+body.page-search-html .card-date {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #777;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+
+        
+body.page-search-html .card-location img,
+body.page-search-html .card-date img {
+            width: 14px;
+            height: 14px;
+            object-fit: contain;
+        }
+
+
+        
+body.page-search-html .view-details {
+            display: block;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 9px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 12px;
+            transition: 0.2s;
+        }
+
+
+        
+body.page-search-html .view-details:hover {
+            background-color: #c92335;
+            color: white;
+            border-color: #c92335;
+        }
+
+
+        
+/* PAGINATION */
+
+        
+body.page-search-html .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            margin-top: 30px;
+        }
+
+
+        
+body.page-search-html .pagination a {
+            text-decoration: none;
+            color: #444;
+            background-color: white;
+            padding: 10px 14px;
+            border: 1px solid #e4e4e8;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+
+        
+body.page-search-html .pagination a.active {
+            background-color: #c92335;
+            color: white;
+            border-color: #c92335;
+        }
+
+
+        
+/* FOOTER */
+
+        
+body.page-search-html footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 12px;
+            border-top: 1px solid #ddd;
+            background-color: white;
+            margin-top: 35px;
+        }
+
+
+        
+/* RESPONSIVE LAYOUT */
+
+        
+@media screen and (max-width: 1200px)  {
+
+
+            
+body.page-search-html .header {
+                flex-wrap: wrap;
+            }
+
+
+            
+body.page-search-html .navbar {
+                order: 3;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+
+            
+body.page-search-html .search-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+        
+}
+
+
+        
+@media screen and (max-width: 800px)  {
+
+
+            
+body.page-search-html .search-layout {
+                grid-template-columns: 1fr;
+            }
+
+
+        
+}
+
+
+        
+@media screen and (max-width: 600px)  {
+
+
+            
+body.page-search-html .header {
+                justify-content: center;
+                padding: 15px;
+            }
+
+
+            
+body.page-search-html .logo-text h1 {
+                font-size: 19px;
+            }
+
+
+            
+body.page-search-html .navbar {
+                gap: 3px;
+            }
+
+
+            
+body.page-search-html .navbar a {
+                font-size: 11px;
+                padding: 9px;
+            }
+
+
+            
+body.page-search-html .navbar a img {
+                width: 17px;
+                height: 17px;
+            }
+
+
+            
+body.page-search-html .search-content {
+                padding: 20px 15px;
+            }
+
+
+            
+body.page-search-html .search-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            
+body.page-search-html .search-box {
+                flex-wrap: wrap;
+            }
+
+
+            
+body.page-search-html .search-box button {
+                width: 100%;
+            }
+
+
+            
+body.page-search-html .results-heading {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+
+        
+}
+
+
+    
+
+/* ==========================================================
+   submit-report.html — page-specific styles
+   Scoped to body.page-submit-report-html to prevent cross-page conflicts.
+   ========================================================== */
+
+        
+/* Para consistent ang sizing ng lahat ng elements */
+
+        
+body.page-submit-report-html, body.page-submit-report-html * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'FriggCafe';
+        }
+
+        
+body.page-submit-report-html {
+            background-color: #f5f5f5;
+            color: #242428;
+        }
+
+        
+/* HEADER AND NAVIGATION */
+
+        
+body.page-submit-report-html .header {
+            background-color: #242428;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            gap: 20px;
+        }
+
+        
+body.page-submit-report-html .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        
+body.page-submit-report-html .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+        
+body.page-submit-report-html .logo-text h1 {
+            color: white;
+            font-size: 23px;
+        }
+
+        
+body.page-submit-report-html .logo-text h1 span {
+            color: #ed4353;
+        }
+
+        
+body.page-submit-report-html .logo-text p {
+            color: #dddddd;
+            font-size: 12px;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+
+        
+body.page-submit-report-html .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        
+body.page-submit-report-html .navbar a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 13px;
+            border-radius: 7px;
+            color: #eeeeee;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+
+        
+body.page-submit-report-html .navbar a img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        
+body.page-submit-report-html .navbar a:hover {
+            background-color: #414146;
+        }
+
+        
+/* Active tab para malaman kung anong page ang bukas */
+
+        
+body.page-submit-report-html .navbar a.active {
+            background-color: #c92335;
+            color: white;
+        }
+
+        
+body.page-submit-report-html .header-account {
+            flex-shrink: 0;
+        }
+
+        
+body.page-submit-report-html .login-button {
+            display: inline-block;
+            background-color: #c92335;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+
+        
+body.page-submit-report-html .login-button:hover {
+            background-color: #a91d2d;
+        }
+
+        
+/* MAIN CONTENT */
+
+        
+body.page-submit-report-html .main-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        
+body.page-submit-report-html .page-heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        
+body.page-submit-report-html .page-heading h2 {
+            font-size: 30px;
+            color: #242428;
+            margin-bottom: 10px;
+        }
+
+        
+body.page-submit-report-html .page-heading p {
+            color: #666666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        
+/* FORM CONTAINER */
+
+        
+body.page-submit-report-html .report-container {
+            background-color: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        
+body.page-submit-report-html .report-container h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #242428;
+        }
+
+        
+body.page-submit-report-html .form-description {
+            color: #777777;
+            font-size: 13px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        
+body.page-submit-report-html .required-note {
+            color: #c92335;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        
+/* LOST OR FOUND OPTIONS */
+
+        
+body.page-submit-report-html .report-type {
+            margin-bottom: 25px;
+        }
+
+        
+body.page-submit-report-html .report-type label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        
+body.page-submit-report-html .type-options {
+            display: flex;
+            gap: 15px;
+        }
+
+        
+body.page-submit-report-html .type-option {
+            flex: 1;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        
+body.page-submit-report-html .type-option:hover {
+            border-color: #c92335;
+            background-color: #fff7f8;
+        }
+
+        
+body.page-submit-report-html .type-option input {
+            accent-color: #c92335;
+            width: 16px;
+            height: 16px;
+        }
+
+        
+body.page-submit-report-html .type-option span {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        
+/* PHOTO UPLOAD */
+
+        
+body.page-submit-report-html .form-section {
+            margin-bottom: 25px;
+        }
+
+        
+body.page-submit-report-html .form-section label,
+body.page-submit-report-html .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        
+body.page-submit-report-html .upload-area {
+            border: 2px dashed #cccccc;
+            border-radius: 9px;
+            padding: 30px 15px;
+            text-align: center;
+            background-color: #fafafa;
+            transition: 0.2s;
+        }
+
+        
+body.page-submit-report-html .upload-area:hover {
+            border-color: #c92335;
+            background-color: #fff8f9;
+        }
+
+        
+body.page-submit-report-html .upload-area img {
+            width: 42px;
+            height: 42px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        
+body.page-submit-report-html .upload-area p {
+            font-size: 13px;
+            color: #555555;
+            margin-bottom: 8px;
+        }
+
+        
+body.page-submit-report-html .upload-area small {
+            color: #999999;
+            font-size: 11px;
+        }
+
+        
+body.page-submit-report-html .upload-area input {
+            display: block;
+            margin: 15px auto 0;
+            font-size: 12px;
+            max-width: 100%;
+        }
+
+        
+/* FORM INPUTS */
+
+        
+body.page-submit-report-html .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+        }
+
+        
+body.page-submit-report-html .form-group {
+            margin-bottom: 5px;
+        }
+
+        
+body.page-submit-report-html .form-group input,
+body.page-submit-report-html .form-group select,
+body.page-submit-report-html .form-group textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #cccccc;
+            border-radius: 7px;
+            font-size: 13px;
+            outline: none;
+            background-color: white;
+        }
+
+        
+body.page-submit-report-html .form-group input:focus,
+body.page-submit-report-html .form-group select:focus,
+body.page-submit-report-html .form-group textarea:focus {
+            border-color: #c92335;
+        }
+
+        
+body.page-submit-report-html .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        
+body.page-submit-report-html .form-group.full-width {
+            grid-column: 1 / 3;
+        }
+
+        
+body.page-submit-report-html .form-group small {
+            display: block;
+            color: #888888;
+            font-size: 11px;
+            margin-top: 7px;
+        }
+
+        
+/* CONTACT INFORMATION */
+
+        
+body.page-submit-report-html .section-divider {
+            border: none;
+            border-top: 1px solid #eeeeee;
+            margin: 30px 0;
+        }
+
+        
+body.page-submit-report-html .section-title {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        
+body.page-submit-report-html .section-subtitle {
+            color: #777777;
+            font-size: 13px;
+            margin-bottom: 22px;
+        }
+
+        
+/* FORM BUTTONS */
+
+        
+body.page-submit-report-html .form-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        
+body.page-submit-report-html .cancel-button,
+body.page-submit-report-html .submit-button {
+            padding: 13px 25px;
+            border-radius: 7px;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        
+body.page-submit-report-html .cancel-button {
+            background-color: white;
+            border: 1px solid #cccccc;
+            color: #444444;
+        }
+
+        
+body.page-submit-report-html .cancel-button:hover {
+            background-color: #eeeeee;
+        }
+
+        
+body.page-submit-report-html .submit-button {
+            background-color: #c92335;
+            border: none;
+            color: white;
+        }
+
+        
+body.page-submit-report-html .submit-button:hover {
+            background-color: #a91d2d;
+        }
+
+        
+/* FOOTER */
+
+        
+body.page-submit-report-html .footer {
+            background-color: #242428;
+            color: #dddddd;
+            text-align: center;
+            padding: 22px;
+            font-size: 12px;
+            margin-top: 50px;
+        }
+
+        
+/* Para maayos pa rin ang layout sa smaller screens */
+
+        
+@media screen and (max-width: 1200px)  {
+
+            
+body.page-submit-report-html .header {
+                flex-wrap: wrap;
+            }
+
+            
+body.page-submit-report-html .navbar {
+                order: 3;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+        
+}
+
+        
+@media screen and (max-width: 600px)  {
+
+            
+body.page-submit-report-html .header {
+                justify-content: center;
+                padding: 15px;
+            }
+
+            
+body.page-submit-report-html .logo-text h1 {
+                font-size: 19px;
+            }
+
+            
+body.page-submit-report-html .navbar {
+                gap: 3px;
+            }
+
+            
+body.page-submit-report-html .navbar a {
+                font-size: 11px;
+                padding: 9px;
+            }
+
+            
+body.page-submit-report-html .navbar a img {
+                width: 17px;
+                height: 17px;
+            }
+
+            
+body.page-submit-report-html .main-container {
+                margin: 25px auto;
+                padding: 0 12px;
+            }
+
+            
+body.page-submit-report-html .page-heading h2 {
+                font-size: 24px;
+            }
+
+            
+body.page-submit-report-html .report-container {
+                padding: 22px 17px;
+            }
+
+            
+body.page-submit-report-html .form-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            
+body.page-submit-report-html .form-group.full-width {
+                grid-column: 1;
+            }
+
+            
+body.page-submit-report-html .type-options {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            
+body.page-submit-report-html .form-buttons {
+                flex-direction: column-reverse;
+            }
+
+            
+body.page-submit-report-html .cancel-button,
+body.page-submit-report-html .submit-button {
+                width: 100%;
+            }
+
+        
+}
+
+    

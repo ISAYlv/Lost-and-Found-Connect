@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Search | Lost & Found Connect</title>
+
+    
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="page-search-html">
+
+    <!-- Main header -->
+    <header class="header">
+
+        <!-- Website logo and name -->
+        <div class="logo">
+
+            <img src="Designer.png" alt="Lost and Found Connect Logo">
+
+            <div class="logo-text">
+
+                <h1>Lost & Found <span>Connect</span></h1>
+
+                <p>Find. Report. Reconnect.</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Main navigation links -->
+        <nav class="navbar">
+
+            <a href="index.html">
+
+                <img src="home.png" alt="">
+
+                Home
+
+            </a>
+
+
+            <a href="search.html" class="active">
+
+                <img src="search.png" alt="">
+
+                Search
+
+            </a>
+
+
+            <a href="submit-report.html">
+
+                <img src="reporrt.webp" alt="">
+
+                Submit Report
+
+            </a>
+
+
+            <a href="my-posts.html">
+
+                <img src="image-removebg-preview.png" alt="">
+
+                My Posts
+
+            </a>
+
+
+            <a href="notifications.html">
+
+                <img src="notif.png" alt="">
+
+                Notifications
+
+            </a>
+
+
+            <a href="profile.html">
+
+                <img src="profile.webp" alt="">
+
+                Profile
+
+            </a>
+
+        </nav>
+
+
+        <!-- Login and sign up button -->
+        <div class="header-account">
+
+            <a href="login.html" class="login-button">
+
+                Log In / Sign Up
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main search page content -->
+    <main class="search-content">
+
+
+        <!-- Page heading -->
+        <section class="search-heading">
+
+            <h2>Search for Items</h2>
+
+            <p>Find lost and found items reported in your school or community.</p>
+
+        </section>
+
+
+        <!-- Search bar -->
+        <div class="search-box">
+
+            <img src="search.png" alt="Search">
+
+            <input type="text" placeholder="Search for an item...">
+
+            <button type="button">Search</button>
+
+        </div>
+
+
+        <div class="search-layout">
+
+
+            <!-- Filter sidebar -->
+            <aside class="filter-sidebar">
+
+                <h3>Filters</h3>
+
+
+                <!-- Item status filter -->
+                <div class="filter-group">
+
+                    <h4>Item Status</h4>
+
+                    <label>
+                        <input type="radio" name="status" checked>
+                        All Items
+                    </label>
+
+                    <label>
+                        <input type="radio" name="status">
+                        Lost Items
+                    </label>
+
+                    <label>
+                        <input type="radio" name="status">
+                        Found Items
+                    </label>
+
+                </div>
+
+
+                <!-- Category filter -->
+                <div class="filter-group">
+
+                    <h4>Item Category</h4>
+
+                    <label>
+                        <input type="checkbox">
+                        Bags
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Electronics
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Personal Belongings
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        School Supplies
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Accessories
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Others
+                    </label>
+
+                </div>
+
+
+                <!-- Location filter -->
+                <div class="filter-group">
+
+                    <h4>Location</h4>
+
+                    <select>
+
+                        <option>All Locations</option>
+                        <option>Library</option>
+                        <option>Main Gate</option>
+                        <option>Cafeteria</option>
+                        <option>Classrooms</option>
+                        <option>School Grounds</option>
+                        <option>Others</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Date filter -->
+                <div class="filter-group">
+
+                    <h4>Date Reported</h4>
+
+                    <select>
+
+                        <option>Any Time</option>
+                        <option>Today</option>
+                        <option>Last 7 Days</option>
+                        <option>Last 30 Days</option>
+                        <option>Older Posts</option>
+
+                    </select>
+
+                </div>
+
+
+                <button type="button" class="apply-filter">
+                    Apply Filters
+                </button>
+
+            </aside>
+
+
+            <!-- Search results -->
+            <section class="results-section">
+
+
+                <!-- Results heading and sorting -->
+                <div class="results-heading">
+
+                    <h3>Browse Items</h3>
+
+                    <div class="sort-area">
+
+                        <label for="sort">Sort by:</label>
+
+                        <select id="sort">
+
+                            <option>Newest First</option>
+                            <option>Oldest First</option>
+                            <option>Lost Items</option>
+                            <option>Found Items</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Item cards -->
+                <div class="search-grid">
+
+
+                    <!-- Lost wallet -->
+                    <div class="search-card">
+
+                        <img src="2_264-removebg-preview.png" alt="Black Wallet" class="search-card-image">
+
+                        <div class="search-card-info">
+
+                            <span class="item-status lost-status">LOST ITEM</span>
+
+                            <h4>Lost Wallet</h4>
+
+                            <p class="item-category">Personal Belongings</p>
+
+                            <p class="card-location">
+                                <img src="loc.png" alt="">
+                                Library
+                            </p>
+
+                            <p class="card-date">
+                                <img src="date.png" alt="">
+                                October 25, 2025
+                            </p>
+
+                            <a href="item-details-wallet.html" class="view-details">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Found keys -->
+                    <div class="search-card">
+
+                        <img src="CSE-AS-ExtraKeys_1200x1200-removebg-preview.png" alt="Set of Keys" class="search-card-image">
+
+                        <div class="search-card-info">
+
+                            <span class="item-status found-status">FOUND ITEM</span>
+
+                            <h4>Found Keys</h4>
+
+                            <p class="item-category">Accessories</p>
+
+                            <p class="card-location">
+                                <img src="loc.png" alt="">
+                                Main Gate
+                            </p>
+
+                            <p class="card-date">
+                                <img src="date.png" alt="">
+                                October 24, 2025
+                            </p>
+
+                            <a href="item-details-keys.html" class="view-details">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Lost phone -->
+                    <div class="search-card">
+
+                        <img src="pon.png" alt="Black Phone" class="search-card-image">
+
+                        <div class="search-card-info">
+
+                            <span class="item-status lost-status">LOST ITEM</span>
+
+                            <h4>Lost Phone</h4>
+
+                            <p class="item-category">Electronics</p>
+
+                            <p class="card-location">
+                                <img src="loc.png" alt="">
+                                Cafeteria
+                            </p>
+
+                            <p class="card-date">
+                                <img src="date.png" alt="">
+                                October 23, 2025
+                            </p>
+
+                            <a href="item-details-phone.html" class="view-details">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Found water bottle -->
+                    <div class="search-card">
+
+                        <img src="image-removebg-preview (1).png" alt="Water Bottle" class="search-card-image">
+
+                        <div class="search-card-info">
+
+                            <span class="item-status found-status">FOUND ITEM</span>
+
+                            <h4>Found Water Bottle</h4>
+
+                            <p class="item-category">Personal Belongings</p>
+
+                            <p class="card-location">
+                                <img src="loc.png" alt="">
+                                Room 204
+                            </p>
+
+                            <p class="card-date">
+                                <img src="date.png" alt="">
+                                October 21, 2025
+                            </p>
+
+                            <a href="item-details-water-bottle.html" class="view-details">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Lost backpack -->
+                    <div class="search-card">
+
+                        <img src="91TUd6ChSaL-removebg-preview.png" alt="Backpack" class="search-card-image">
+
+                        <div class="search-card-info">
+
+                            <span class="item-status lost-status">LOST ITEM</span>
+
+                            <h4>Lost Backpack</h4>
+
+                            <p class="item-category">Bags</p>
+
+                            <p class="card-location">
+                                <img src="loc.png" alt="">
+                                School Grounds
+                            </p>
+
+                            <p class="card-date">
+                                <img src="date.png" alt="">
+                                October 20, 2025
+                            </p>
+
+                            <a href="item-details-backpack.html" class="view-details">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Pagination -->
+                <div class="pagination">
+
+                    <a href="#">Previous</a>
+
+                    <a href="#" class="active">1</a>
+
+                    <a href="#">2</a>
+
+                    <a href="#">3</a>
+
+                    <a href="#">Next</a>
+
+                </div>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- Website footer -->
+    <footer>
+
+        <p>© 2026 Lost & Found Connect. All Rights Reserved.</p>
+
+    </footer>
+
+
+</body>
+
+</html>

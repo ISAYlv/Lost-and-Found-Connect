@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Submit Report | Lost & Found Connect</title>
+    
+</head>
+<body class="page-submit-report-html">
+    <!-- HEADER -->
+    <header class="header">
+        <!-- Logo and website name -->
+        <div class="logo">
+            <img src="Designer.png" alt="Lost and Found Connect Logo">
+            <div class="logo-text">
+                <h1>Lost & Found <span>Connect</span></h1>
+                <p>Find. Report. Reconnect.</p>
+            </div>
+        </div>
+        <!-- Navigation links -->
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="home.png" alt="">
+                Home
+            </a>
+            <a href="search.html">
+                <img src="search.png" alt="">
+                Search
+            </a>
+            <a href="submit-report.html" class="active">
+                <img src="reporrt.webp" alt="">
+                Submit Report
+            </a>
+            <a href="my-posts.html">
+                <img src="image-removebg-preview.png" alt="">
+                My Posts
+            </a>
+            <a href="notifications.html">
+                <img src="notif.png" alt="">
+                Notifications
+            </a>
+            <a href="profile.html">
+                <img src="profile.webp" alt="">
+                Profile
+            </a>
+        </nav>
+        <!-- Login button -->
+        <div class="header-account">
+            <a href="login.html" class="login-button">
+                Log In / Sign Up
+            </a>
+        </div>
+    </header>
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
+        <!-- Page heading -->
+        <div class="page-heading">
+            <h2>Submit a Report</h2>
+            <p>Help reunite people with their belongings by reporting a lost or found item.</p>
+        </div>
+        <!-- REPORT FORM -->
+        <div class="report-container">
+            <h3>Item Information</h3>
+            <p class="form-description">
+                Please provide the necessary details about the item.
+                Make sure your information is correct before submitting.
+            </p>
+            <p class="required-note">* Required fields</p>
+            <!-- Form starts here -->
+            <form action="#" method="post" enctype="multipart/form-data">
+                <!-- Report type -->
+                <div class="report-type">
+                    <label>What would you like to report? *</label>
+                    <div class="type-options">
+                        <label class="type-option">
+                            <input type="radio" name="reportType" value="Lost" required>
+                            <span>Lost Item</span>
+                        </label>
+                        <label class="type-option">
+                            <input type="radio" name="reportType" value="Found" required>
+                            <span>Found Item</span>
+                        </label>
+                    </div>
+                </div>
+                <!-- Upload photo -->
+                <div class="form-section">
+                    <label>Upload Item Photo</label>
+                    <div class="upload-area">
+                        <img src="submit-icon.webp" alt="Upload Icon">
+                        <p>Choose a photo of the lost or found item</p>
+                        <small>Accepted formats: JPG and PNG</small>
+                        <input type="file" name="itemPhoto" accept=".jpg, .jpeg, .png">
+                    </div>
+                </div>
+                <!-- Item details -->
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="itemName">Item Name *</label>
+                        <input
+                            type="text"
+                            id="itemName"
+                            name="itemName"
+                            placeholder="Example: Black Wallet"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category *</label>
+                        <select id="category" name="category" required>
+                            <option value="" disabled selected>Select a category</option>
+                            <option value="Bags">Bags</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Personal Belongings">Personal Belongings</option>
+                            <option value="School Supplies">School Supplies</option>
+                            <option value="Accessories">Accessories</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="description">Item Description *</label>
+                        <textarea
+                            id="description"
+                            name="description"
+                            placeholder="Describe the item, including its color, brand, size, or other identifying details."
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Last Known Location *</label>
+                        <input
+                            type="text"
+                            id="location"
+                            name="location"
+                            placeholder="Example: University Library"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date Lost / Found *</label>
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required
+                        >
+                    </div>
+                </div>
+                <!-- Contact information -->
+                <hr class="section-divider">
+                <h3 class="section-title">Contact Information</h3>
+                <p class="section-subtitle">
+                    Provide your contact details so other users can reach you regarding the item.
+                </p>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="contactNumber">Contact Number *</label>
+                        <input
+                            type="tel"
+                            id="contactNumber"
+                            name="contactNumber"
+                            placeholder="Example: 09XX XXX XXXX"
+                            required
+                        >
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="email">Email Address *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Example: yourname@email.com"
+                            required
+                        >
+                    </div>
+                </div>
+                <!-- Form buttons -->
+                <div class="form-buttons">
+                    <a href="index.html" class="cancel-button">
+                        Cancel
+                    </a>
+                    <button type="submit" class="submit-button">
+                        Submit Report
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Lost & Found Connect. All Rights Reserved.</p>
+        <p>Find. Report. Reconnect.</p>
+    </footer>
+</body>
+</html>

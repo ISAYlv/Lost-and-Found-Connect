@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Log In | Lost & Found Connect</title>
+
+    
+</head>
+
+<body class="page-login-html">
+
+
+    <!-- MAIN PAGE -->
+    <main class="main-container">
+
+
+        <!-- LEFT WELCOME SECTION -->
+        <section class="welcome-section">
+
+            <!-- Website logo -->
+            <a href="index.html" class="welcome-logo" style="text-decoration: none; color: white;">
+
+                <img src="Designer.png" alt="Lost and Found Connect Logo">
+
+                <div>
+                    <h1>Lost & Found <span>Connect</span></h1>
+                    <p>Find. Report. Reconnect.</p>
+                </div>
+
+            </a>
+
+
+            <h2>Welcome Back!</h2>
+
+            <p>
+                Reconnect with your belongings and help others find what they have lost.
+                Log in to access your Lost & Found Connect account.
+            </p>
+
+
+            <!-- Welcome image -->
+            <img
+                src="91TUd6ChSaL-removebg-preview.png"
+                alt="Lost and Found Item"
+                class="welcome-image"
+            >
+
+
+            <a href="index.html" class="back-home">
+                ← Back to Home
+            </a>
+
+        </section>
+
+
+        <!-- RIGHT FORM SECTION -->
+        <section class="form-section">
+
+            <div class="form-container">
+
+
+                <!-- Form heading -->
+                <div class="form-heading">
+
+                    <h2>Welcome!</h2>
+
+                    <p>
+                        Enter your account details to continue.
+                    </p>
+
+                </div>
+
+
+                <!-- LOGIN FORM -->
+                <form
+                    action="index.html"
+                    method="get"
+                    onsubmit="window.location.href='index.html'; return false;"
+                >
+
+                    <div class="form-group">
+
+                        <label for="loginEmail">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="loginPassword">Password</label>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Remember me -->
+                    <div class="remember-me">
+
+                        <input
+                            type="checkbox"
+                            id="remember"
+                            name="remember"
+                        >
+
+                        <label for="remember">
+                            Remember me
+                        </label>
+
+                    </div>
+
+
+                    <!-- Forgot password -->
+                    <div class="forgot-password">
+
+                        <a href="#">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <button type="submit" class="submit-button">
+                        Log In
+                    </button>
+
+                </form>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>© 2026 Lost & Found Connect. All Rights Reserved.</p>
+        <p>Find. Report. Reconnect.</p>
+
+    </footer>
+
+
+</body>
+
+</html>
